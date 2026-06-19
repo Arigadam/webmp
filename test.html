@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Тест P2P-оверлея</title>
+<style>
+  body { font-family: -apple-system, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 20px; color: #222; }
+  h1 { font-size: 22px; }
+  code { background: #f2f2f2; padding: 2px 6px; border-radius: 4px; }
+</style>
+</head>
+<body>
+  <h1>Тестовая страница</h1>
+  <p>Откройте эту страницу в двух разных вкладках/окнах (можно даже в обычном и инкогнито,
+  или с телефона), чтобы увидеть, как работает плавающая кнопка в правом нижнем углу:
+  курсоры/тачи, чат сайта, список людей на странице и на сайте.</p>
+  <p>Попробуйте открыть и <code>page2.html</code> в соседней вкладке — это «другая страница»
+  того же сайта, переход на неё должен появиться в общем чате-логе.</p>
+
+  <!-- Подключение виджета — всего одна строка -->
+  <script src="p2p-overlay.js"></script>
+
+  <!-- Намеренно подключаем скрипт ВТОРОЙ раз, чтобы проверить защиту от дублирования -->
+  <script src="p2p-overlay.js"></script>
+</body>
+</html>

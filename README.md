@@ -22,6 +22,8 @@
 <script src="p2p-overlay.js"></script>
 ```
 
+или если вы пользователь [установите UserScript](https://arigadam.github.io/webmp/webmp.user.js).
+
 Trystero подгружается автоматически изнутри скрипта через dynamic import с CDN.
 
 ## Как это работает
